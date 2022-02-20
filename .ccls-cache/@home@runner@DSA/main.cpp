@@ -112,22 +112,541 @@ Prime Number
 
 
 
-  int n;
+/*  int n;
   cout<<"Enter N Number : ";
   cin>>n;
   int i = 1;
   while(i<=n){
     int j = 1;
     while(j<=n){
-        cout<<j;
+        cout<<n-j+1;
       j++;
     }
     cout<<endl;
     i++;
   }
+*/
 
-  
+
+/*
+
+  int n;
+  cout<<"Enter N Number : ";
+  cin>>n;
+
+  int i = 1;
+  int count = 1;
+  while(i<=n){
+    int j = 1;
+    while(j<=n){
+      cout<<count<<"|";
+      count++;
+      j++;
+    }
+    cout<<endl;
+    i++;
+  }
+  */
+
+/*
+   int n;
+  cout<<"Enter N Number : ";
+  cin>>n;
 
 
+  int i = 1;
+
+  while(i<=n){
+    int j = 1;
+    while(j<=i){
+      cout<<"*";
+      j++;
+    }
+    cout<<endl;
+    i++;
+  }
+  */
+
+/*
+
+   int n;
+    cout<<"Enter N Number : ";
+    cin>>n;
+
+  int row = 1;
+
+  while(row<=n){
+    int col = 1;
+    while(col<=row){
+      cout<<row;
+      col++;
+    }
+    cout<<endl;
+    row++;
+  }
+  */
+
+  /*
+
+  int n;
+  cout<<"Enter N Number : ";
+  cin>>n;
+
+  int row = 1;
+  int count = 1;
+
+  while(row<=n){
+    int col = 1;
+    while(col<=row){
+      cout<<count<<"|";
+      count++;
+      col++;
+    }
+    cout<<endl;
+    row++;
+  }
+
+*/
+
+/*
+//H.W
+ int n;
+  cout<<"Enter N Number : ";
+  cin>>n;
+
+  int row = 1;
+  while(row<=n){
+    int col = 0;
+    while(col<row){
+      cout<<row+col<<"|";
+      col++;
+    }
+    cout<<endl;
+    row++;
+  }
+*/
+
+/*
+
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+//formula = (row-col+1)
+int row = 1;
+
+while(row<=n){
+  int col = 1;
+  while(col<=row){
+    cout<<(row-col+1);
+    col++;
+  }
+  cout<<endl;
+  row++;
+}
+
+*/
+
+/*
+// print same colum 'A' charatr
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+while(row<=n){
+  int col = 1;
+
+  while(col<=n){
+    char car = 'A'+row-1;
+    cout<<car;
+    col++;
+  }
+  row++;
+  cout<<endl;
+}
+
+*/
+
+/*
+
+// print same row 'A' charatr
+
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+while(row<=n){
+  int col = 1;
+  while(col<=n){
+    char c = 'A'+col-1;
+    cout<<c;
+    col++;
+  }
+  cout<<endl;
+  row++;
+}
+
+*/
+
+/*
+
+//H.W.
+
+// print abcd n wise
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+char c = 'A';
+
+while(row<=n){
+  int col = 1;
+  while(col<=n){
+    if(c<='Z'){
+    cout<<c;
+    }else{
+      break;
+    }
+    c++;
+    col++;
+  }
+  if(c<='Z'){
+  cout<<endl;
+  row++;
+  }else{
+    break;
+  }
+}
+
+*/
+
+/*
+
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+while(row<=n){
+  int col = 0;
+  while(col<n){
+    char c = 'A'-1+row+col;
+    cout<<c;
+    col++;
+  }
+  cout<<endl;
+  row++;
+}
+
+*/
+
+
+/*
+
+//charater tryangualar pattern
+
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+while(row<=n){
+  int col = 1;
+  while(col<=row){
+    char c = 'A'+row-1;
+    cout<<c;
+    col++;
+  }
+  cout<<endl;
+  row++;
+}
+
+*/
+
+/*
+
+//charater tryangualar pattern
+
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+char c = 'A';
+
+while(row<= n){
+  int col = 1;
+  while(col<=row){
+    cout<<c;
+    c++;
+    col++;
+  }
+  cout<<endl;
+  row++;
+}
+
+*/
+
+/*
+//charater tryangualar pattern
+
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+while(row<=n){
+  int col = 1;
+  while(col<=row){
+    char c = 'A'+col-2+row;
+    cout<<c;
+    col++;
+  }
+  row++;
+  cout<<endl;
+}
+*/
+
+/*
+
+//charater tryangualar pattern
+//formula =  'A'+n-row+col-1
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+while(row<=n){
+  int col = 1;
+  while(col<=row){
+    char c = 'A'+n-row+col-1;
+    cout<<c;
+    col++;
+  }
+  row++;
+  cout<<endl;
+}
+
+*/
+
+
+/*
+
+//space tryangualar pattern
+//formula of space =  n- row
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+  while(row<=n){
+    int space = n-row;
+    while(space){
+      cout<<" ";
+      space--;
+    }
+    int col = 1;
+    while(col<=row){
+      cout<<"*";
+      col++;
+    }
+    cout<<endl;
+    row++;
+  }
+
+*/
+
+/*
+//ulta tryangualar pattern
+//formula of space =  n- row
+int n;
+
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+
+while(row<=n){
+  int col = 1;
+  while(col<=n-row+1){
+    cout<<"*";
+    col++;
+  }
+  cout<<endl;
+  row++;
+}
+*/
+
+/*
+
+//ulta tryangualar * pattern
+//formula of space =  while(space<=row-1)
+//formula of colmun = while(col<n-row+2)
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+while(row<=n){
+  int space = 1;
+  while(space<=row-1){
+    cout<<" ";
+    space++;
+  }
+  int col = 1;
+  while(col<n-row+2){
+    cout<<"*";
+    col++;
+  }
+  row++;
+  cout<<endl;
+}
+
+*/
+
+/*
+
+//space tryangualar number pattern
+//formula of space =  while(space<=row-1)
+//formula of colmun = while(col<=n-row+1)
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+
+while(row<=n){
+  int space = 1;
+  while(space<=row-1){
+    cout<<"-";
+    space++;
+  }
+  int col = 1;
+  while(col<=n-row+1){
+    cout<<row;
+    col++;
+  }
+  row++;
+  cout<<endl;
+}
+
+*/
+
+/*
+
+//space tryangualar number pattern
+//formula of space =  while(space<=row-1)
+//formula of colmun = while(col<=n-row+1)
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+  while(row<=n){
+    int space = n-row;
+    while(space){
+      cout<<"-";
+      space--;
+    }
+    int col = 1;
+    while(col<=row){
+      cout<<row;
+      col++;
+    }
+    row++;
+    cout<<endl;
+  }
+
+  */
+
+  /*
+
+//space tryangualar number pattern
+//formula of space =  while(space<=row-1)
+//formula of colmun = while(col<=n-row+1)
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+
+while(row<=n){
+  int space = row-1;
+  while(space){
+    cout<<" ";
+    space--;
+  }
+  int col = 1;
+  while(col<=n-row+1){
+    cout<<row+col-1;
+    col++;
+  }
+  row++;
+  cout<<endl;
+}
+
+*/
+
+/*
+
+//hard pattern
+
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+while(row<=n){
+  int space = n - row;
+  while(space){
+    cout<<" ";
+    space--;
+  }
+  int col = 1;
+  while(col<=row){
+    cout<<col;
+    col++;
+  }
+  int start = row-1;
+  while(start){
+    cout<<start;
+    start--;
+  }
+cout<<endl;
+row++;
+}
+*/
+
+
+//H.W.
+//Hard Patter
+
+int n;
+cout<<"Enter N Number : ";
+cin>>n;
+int row = 1;
+
+  while(row<=n){
+    int first = 1;
+    while(first<=n-row+1){
+      cout<<first;
+      first++;
+    }
+
+    int sec = n-row-3; // 5-1-1 = 3 // 
+    while(sec<row){
+      cout<<"*";
+      sec++;
+    }
+
+    int thr = 1;
+    while(thr<=n-row+1){
+      cout<<n-thr-row+2;
+      thr++;
+    }
+
+    cout<<endl;
+    row++;
+  }
   
 }
